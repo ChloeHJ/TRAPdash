@@ -8,6 +8,7 @@ from jupyter_dash import JupyterDash
 import dash
 import dash_core_components as dcc
 import dash_html_components as html
+import dash_table
 from dash.dependencies import Input, Output, State
 import base64
 import datetime
@@ -15,8 +16,6 @@ import os
 import io
 import plotly.graph_objs as go
 import cufflinks as cf
-import dash
-import dash_table
 from urllib.parse import quote as urlquote
 from flask import Flask, send_from_directory
 import plotly.express as px
@@ -111,7 +110,7 @@ app.layout = html.Div([
 
 
 # load models 
-os.chdir('C:/Users/Chloe/0_trap_app')
+# os.chdir('C:/Users/Chloe/0_trap_app')
 path_trap = tf.keras.models.load_model('model/pathogenic_trap_model')
 path_trap_softmax = tf.keras.models.load_model('model/pathogenic_trap_softmax_model')
 
