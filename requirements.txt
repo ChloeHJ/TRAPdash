@@ -15,5 +15,5 @@ keras==2.9.0
 Keras-Preprocessing==1.1.2
 transformers==4.24.0
 sentencepiece==0.1.97
-scikit-learn==1.1.2
+scikit-learn==1.0.2
 
